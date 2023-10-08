@@ -1,21 +1,35 @@
 export const openCommand = {
-	command: "open <path>",
+	command: "open [vault] [file] [path]",
 	description: "open a file",
 	builder: (yargs) => {
 		return yargs
 			.option("vault", {
 				alias: "v",
 				describe: "vault to open",
-				type: "boolean"
-			})
-			.positional("path", {
-				describe: "path to vault",
 				type: "string"
-			});
+			})
+			.option("file", {
+				alias: "f",
+				describe: "file",
+				type: "string"
+			})
+			.option("path", {
+				alias: "p",
+				describe: "path to file", 
+				type: "string",
+			})
 	},
 	handler: (argv) => {
-		if (argv.vault) {
-			console.log("argv: ", argv.path);
+		if (Object.keys(argv).length === 2) {
+			// no flags were passed open default vault
+			console.log("no flags were passed open default vault")
+		} else if (argv.file && !argv.vault) {
+			// file was specified but vault was not, open file in default vault	
+			console.log("file was specified but vault was not, open file in default vault	")
+		} else if (argv.vault && argv.file) {
+			// vault and file were specified
+			console.log("vault and file were specified")
 		}
 	}
 }
+

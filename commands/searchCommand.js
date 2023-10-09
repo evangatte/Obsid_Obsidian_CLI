@@ -15,6 +15,6 @@ export const searchCommand = {
 			})
 	},
 	handler: (argv) => {
-
+		console.log("search")
 	}
 }

@@ -10,6 +10,10 @@
   "author": "evangatte",
   "license": "ISC",
   "dependencies": {
+    "@types/yargs": "^17.0.28",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }

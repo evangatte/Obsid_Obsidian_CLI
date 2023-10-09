@@ -1,7 +1,7 @@
 export const searchCommand = {
 	command: "search [vault] [query]",
 	description: "search",
-	builder: (yargs) => {
+	builder: (yargs: any) => {
 		return yargs
 			.option("vault", {
 				alias: "v",
@@ -14,7 +14,7 @@ export const searchCommand = {
 				type: "string",
 			})
 	},
-	handler: (argv) => {
+	handler: (argv: any) => {
 		console.log("search")
 	}
 }

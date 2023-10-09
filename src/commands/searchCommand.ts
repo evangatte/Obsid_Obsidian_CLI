@@ -1,7 +1,9 @@
+import { Arguments, Argv } from 'yargs';
+
 export const searchCommand = {
 	command: "search [vault] [query]",
 	description: "search",
-	builder: (yargs: any) => {
+	builder: (yargs: Argv) => {
 		return yargs
 			.option("vault", {
 				alias: "v",
@@ -14,7 +16,7 @@ export const searchCommand = {
 				type: "string",
 			})
 	},
-	handler: (argv: any) => {
+	handler: (argv: Arguments) => {
 		console.log("search")
 	}
 }

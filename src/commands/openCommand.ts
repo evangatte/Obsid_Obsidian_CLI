@@ -26,7 +26,7 @@ export const openCommand = {
 		// check for errors
 		if (argv.vault && argv.path && argv.file) {
 			// vault, file, and path were specified, error
-			console.error("ERROR: only a vault or a file can be specified")
+			console.error("ERROR: only a path or a file can be specified")
 			process.exit();
 		}
 

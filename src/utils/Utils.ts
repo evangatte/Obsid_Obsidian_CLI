@@ -9,7 +9,7 @@ export class Utils {
 
 	// returns data from a JSON file that contains info from the last command ran
 	static getCommandHistory() {
-		readWriteJson.readJsonFile();
+		return readWriteJson.readJsonFile();
 	}
 
 	// updates a JSON file that stores info about the last command ran

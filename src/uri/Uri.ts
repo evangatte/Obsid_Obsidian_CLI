@@ -1,5 +1,5 @@
 import { Arguments } from "yargs";
-import { buildOpenUri } from "./uriHelpers/openUri.js";
+import { buildOpenUri } from "./openUri.js";
 
 enum Actions {
 	Open = "open",

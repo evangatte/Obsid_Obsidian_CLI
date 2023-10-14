@@ -9,6 +9,6 @@ enum Actions {
 
 export class Uri {
 	static buildOpenUri(argv: Arguments) {
-		buildOpenUri(argv)
+		return buildOpenUri(argv)
 	}
 }

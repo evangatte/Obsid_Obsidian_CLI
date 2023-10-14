@@ -1,5 +1,6 @@
 import { Arguments, Argv } from 'yargs';
 import { Uri } from '../uri/Uri.js';
+import { Utils } from '../utils/Utils.js';
 
 export const openCommand = {
 	command: "open [vault] [file] [path]",
@@ -31,6 +32,8 @@ export const openCommand = {
 		}
 
 		// build uri
-		Uri.buildOpenUri(argv)
+		const uri = Uri.buildOpenUri(argv)
+		console.log("URI: ", uri);
+		Utils.executeShellCommand(`${uri}`);
 	}
 }

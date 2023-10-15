@@ -24,13 +24,6 @@ export const openCommand = {
 			})
 	},
 	handler: (argv: Arguments) => {
-		// check for errors
-		if (argv.vault && argv.path && argv.file) {
-			// vault, file, and path were specified, error
-			console.error("ERROR: only a path or a file can be specified")
-			process.exit();
-		}
-
 		// build uri
 		const uri = Uri.buildOpenUri(argv)
 		console.log("URI: ", uri);

@@ -1,4 +1,6 @@
 import { Arguments, Argv } from 'yargs';
+import { Uri } from '../uri/Uri.js';
+import { Utils } from '../utils/Utils.js';
 
 export const searchCommand = {
 	command: "search [vault] [query]",
@@ -17,6 +19,9 @@ export const searchCommand = {
 			})
 	},
 	handler: (argv: Arguments) => {
-		console.log("search")
+		// build uri
+		const uri = Uri.buildSearchUri(argv);
+		console.log("URI: ", uri);
+		Utils.executeShellCommand(`${uri}`);
 	}
 }

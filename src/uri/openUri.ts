@@ -12,7 +12,7 @@ export function buildOpenUri(argv: Arguments) {
 	} else if (argv.file && argv.vault === undefined) {
 		// file was specified but vault was not, open file in default vault	
 		console.log("file was specified but vault was not, open file in default vault	")
-		return `"open obsidian://open?file=${encodeArgs(argv.file.toString())}"`
+		return `open "obsidian://open?file=${encodeArgs(argv.file.toString())}"`
 	} else if (argv.vault && argv.file) {
 		// vault and file were specified
 		console.log("vault and file were specified");

@@ -26,7 +26,7 @@ export const openCommand = {
 	handler: (argv: Arguments) => {
 		// build uri
 		const uri = Uri.buildOpenUri(argv)
-		console.log("URI: ", uri);
+		// console.log("URI: ", uri);
 		Utils.executeShellCommand(`${uri}`);
 	}
 }

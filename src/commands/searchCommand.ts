@@ -21,7 +21,7 @@ export const searchCommand = {
 	handler: (argv: Arguments) => {
 		// build uri
 		const uri = Uri.buildSearchUri(argv);
-		console.log("URI: ", uri);
+		// console.log("URI: ", uri);
 		Utils.executeShellCommand(`${uri}`);
 	}
 }

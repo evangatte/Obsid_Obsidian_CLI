@@ -1,10 +1,11 @@
 <h1 style="text-align: center;">Obsidian CLI</h1>
 
-<p style="text-align: center;">A command line interface built with Typescript used to open and search Obsidian Vaults</p>
+<p style="text-align: center;">A command line interface for opening and searching Obsidian Vaults built with Typescript.</p>
 
 -----
 
-For list of commands run `obsid -h`:
+# Usage
+For a list of commands run `obsid -h`:
 
 ```
 Commands:
@@ -26,19 +27,24 @@ Flags:
         -p/--path
         -f/--file
         -q/--query
-		-h/--help
+        -h/--help
+        
 
 ```
 
 
-- Due to life I dont really have much time to put toward this project, but as is the `open` and `search` commands work as intended.
 
 
-## Installation (must have typescript installed)
-- Clone this repository
-- from the command line run `tsc` inside of the projects root directory.
-	- this will create a `dist` directory, `dist/index.js` will be the entry point into the program.
-- The simplest way to use this cli is by creating a zsh alias that can be called from the command line:
+
+# Installation (must have NodeJs installed)
+```
+git clone git@github.com:evangatte/Obsidian_CLI.git
+cd Obsidian_CLI/
+npm install
+npx tsc
+```
+- This will create a `dist` directory, `dist/index.js` will be the entry point into the program.
+- The simplest way to use this CLI is by creating a zsh alias that can be called from the command line:
 	- Inside of your zsh config file (`~/.zshrc`) add:
 		```
 		obsid() {
@@ -46,4 +52,8 @@ Flags:
 		}
 		```
 
+----
 
+[Yargs](https://www.npmjs.com/package/yargs) is used for command line argument parsing.
+
+Due to life I dont really have time to put toward this project, but as is the `open` and `search` commands work as intended.

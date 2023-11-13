@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "evangatte",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/yargs": "^17.0.28",
     "yargs": "^17.7.2"

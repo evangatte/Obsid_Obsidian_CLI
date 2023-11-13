@@ -36,7 +36,7 @@ Flags:
 
 ## Installation (must have typescript installed)
 - Clone this repository
-- from the command line run `tsc` inside of the root directory.
+- from the command line run `tsc` inside of the projects root directory.
 	- this will create a `dist` directory, `dist/index.js` will be the entry point into the program.
 - The simplest way to use this cli is by creating a zsh alias that can be called from the command line:
 	- Inside of your zsh config file (`~/.zshrc`) add:

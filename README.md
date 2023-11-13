@@ -4,6 +4,9 @@
 
 -----
 
+<b>Only Works on MacOs</b>
+
+
 # Usage
 For a list of commands run `obsid -h`:
 

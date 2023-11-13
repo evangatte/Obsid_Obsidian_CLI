@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Obsidian CLI</h1>
+<h1 style="text-align: center;">Obsid</h1>
 
 <p style="text-align: center;">A command line interface for opening and searching Obsidian Vaults built with Typescript.</p>
 
@@ -28,7 +28,7 @@ Flags:
         -f/--file
         -q/--query
         -h/--help
-        
+
 
 ```
 
@@ -38,8 +38,8 @@ Flags:
 
 # Installation (must have NodeJs installed)
 ```
-git clone git@github.com:evangatte/Obsidian_CLI.git
-cd Obsidian_CLI/
+git clone git@github.com:evangatte/Obsid_Obsidian_CLI.git
+cd Obsid_Obsidian_CLI
 npm install
 npx tsc
 ```
